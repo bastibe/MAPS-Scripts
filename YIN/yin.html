@@ -1,0 +1,84 @@
+<html>
+<head>
+<title> YIN </title>
+</head>
+
+<body>
+
+See README for copyright information.
+
+<hr>
+<h2> YIN: fundamental frequency estimator </h2>
+<hr>
+
+YIN estimates the fundamental frequency (F0) of an audio signal.
+Features are:
+<ul>
+<li> Reliability (based on tests, see reference below).
+<li> Accuracy (subsample resolution).
+<li> Wide search range (default is 30 Hz - sr/4).
+<li> Good temporal resolution.
+<li> Ease of use.
+</ul>
+
+YIN operates on vectors or files. YIN outputs a structure containing a set
+of four vectors: F0 vs time, two estimates of aperiodic/total power 
+(one gross estimate, one fine estimate), and a period-smoothed estimate 
+of instantaneous power.
+<p>
+If no output argment is specified, YIN  
+plots F0 as a function of time (in octaves re: 440 Hz), aperiodicity, and power.
+<p>
+In the F0 plot, samples in blue are reckoned reliable (aperiodicity<threshold), 
+green are intermediate (aperiodicity<2*threshold), and
+yellow unreliable (aperiodicity>2*threshold).  
+
+<p>
+Type 'help yin' for a description of the parameters.  Read the reference below and
+the code to understand their meaning.  In brief:
+<ul>
+<li> To increase speed: increase 'hop' or 'minf0'.
+<li> To reduce memory needs: reduce 'bufsize', or increase 'hop' or 'minf0'.
+<li> To slightly increase reliability: reduce 'hop'.
+<li> To slightly increase precision: upsample before processing.
+<li> To improve temporal resolution: increase 'minf0', decrease 'hop'.
+<li> To process lower F0s: reduce 'minf0'.	 Higher F0s: upsample and increase 'maxf0'.
+<li> To avoid subharmonic errors: increase 'thresh'.  
+<li> To avoid harmonic/formant errors: reduce 'thresh'.
+<li> Make sure that the range [minf0 maxf0] includes the expected f0.
+</ul>
+Parameter 'thresh' sets the proportion of aperiodic power that is
+tolerated within a "periodic" signal.  This may vary according to the application. 
+<p>
+For speech or musical instruments a value of 0.1 is usually adequate.  Singing voice
+may require a smaller value (as low as 0.001) if a harmonic is reinforced by a
+sharp formant.
+<p>
+Some signals are inherently ambiguous. For example
+the response of a high-Q resonator excited by a pulse train may be seen either as a complex
+tone with an F0 equal to that of the pulse train, or as an 
+amplitude modulated pure tone with an F0 equal to the resonant frequency.  
+Neither is more "correct" than the other.  To obtain the result
+that you expect,  you must set the threshold to an appropriate value: small for the 
+fundamental periodicity, large for the resonance periodicity.
+
+<p>
+YIN is described in:
+<br></tt>
+de Cheveign&eacute;, A., and Kawahara, H. (2002). "YIN, a fundamental frequency estimator 
+for speech and music," J. Acoust. Soc. Am., 111, 1917-1930. (<a href=
+	"http://www.ircam.fr/pcm/cheveign/ps/yin.pdf">pdf</a>)
+	</tt>
+	
+	<hr>
+[Code is <a href="http://www.ircam.fr/pcm/cheveign/sw/yin.zip">here</a>]
+[<a href="http://www.ircam.fr/pcm/cheveign">Alain de Cheveign&eacute;</a>]
+	
+	
+	
+	
+	
+	</body>
+	</html>
+	
+	

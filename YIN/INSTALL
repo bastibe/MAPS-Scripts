@@ -1,0 +1,13 @@
+To get yin to work on your system, put yin/ on your matlab path.
+
+Yin uses mex files for its private routines.  Precompiled mex files are
+for several platforms.  If there aren't any for yours, you must compile 
+them yourself.  Go to 
+	yin/private/src 
+In matlab, for each filename.c, type 
+	mex filename.c
+then move the mex files produced to 
+	/yin/private/
+
+
+

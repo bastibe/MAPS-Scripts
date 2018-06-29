@@ -1,0 +1,39 @@
+15 May 2002: changed value of dipwidth in period_11.m (1.9 --> 1.85) to 
+avoid error condition.
+
+20 June 2002: plot square root of aperiodicity ratio, rather than ratio 
+itself
+
+1 June 2003: new version of YIN.  The implementation is improved (faster, 
+more robust, bugs corrected).  YIN now processes files a chunk at a 
+time, so it can handle larger files.
+
+28 July 2003: bug fixes.
+
+1 Sept 2003: put sf routines in yin/private/.
+
+16 Sept 2003: bug fix.
+
+17 Sept 2003: bug fix.
+
+22 Sept 2003: bug fix (rdiff_inplace.c).  Mex functions must be
+recompiled for Windows.  Added option 'shift' to allow windows to
+shift left, right, or symmetrically.
+
+30 Sept 2003: changed definition of 'thresh' parameter to match 
+the value actually used in algorithm (threshold for min of difference
+function).  Old and new definitions differ by a factor of two.  Old 
+default was 0.1, new is 0.2 (behavior is the same).  
+
+3 Oct 2003:
+- Fixed a bug that increased error probability at buffer edge.
+- Fixed a weakness in the search for minimum that increased the
+ likelihood of a 'too low' error.
+- New parameter 'relflag'.  If 0 the threshold is absolute, if
+ ~0 the threshold is relative to the global minimum of the difference
+ function.  Default is 1.  This changes the semantics of 'thresh'.
+- Default of 'thresh' is now 0.1.
+- Windows: mex files must be recompiled!
+
+
+
