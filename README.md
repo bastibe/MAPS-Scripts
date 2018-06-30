@@ -1,6 +1,6 @@
 # MaPS-f0
 
-[![DOI](https://zenodo.org/badge/139153624.svg)](https://zenodo.org/badge/latestdoi/139153624)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1302184.svg)](https://doi.org/10.5281/zenodo.1302184)
 
 This repository contains all code and data necessary to recreate the evaluation and figures in an upcoming publication. At the moment, we have only included byte code for our algorithm. The full source code in Python, Matlab, and Julia will follow once the paper is accepted.
 
