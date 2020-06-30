@@ -8,7 +8,7 @@ This is part of the dissertation [Pitch of Voiced Speech in the Short-Time Fouri
 
 This repository contains source code for MAPS, the *Magnitude and Phase Spectrogram* fundamental frequency estimation algorithm.
 
-Implementations of the algorithm are provided in Python (*maps_f0.py*), Matlab (*maps_f0.m*), and Julia (*maps_f0.jl*). MAPS is provided under the terms of the GPLv3 license.
+Implementations of the algorithm are provided in Python (*maps_f0.py*), Matlab (*maps_f0.m*), and Julia (*maps_f0.jl*). MAPS is provided under the terms of the GPLv3 license. [PEFAC](http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html)&nbsp;[1], [RAPT](http://www.speech.kth.se/wavesurfer/links.html)&nbsp;[2], and [YIN](http://audition.ens.fr/adc/)&nbsp;[3] are covered by their respective licenses.
 
 Additionally, *MAPS Evaluation.ipynb* contains a reproducible research notebook for comparing MAPS to the well-known fundamental frequency estimation algorithms [PEFAC](http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html)&nbsp;[1], [RAPT](http://www.speech.kth.se/wavesurfer/links.html)&nbsp;[2], and [YIN](http://audition.ens.fr/adc/)&nbsp;[3] on the [PTDB-TUG](https://www.spsc.tugraz.at/databases-and-tools/ptdb-tug-pitch-tracking-database-from-graz-university-of-technology.html)&nbsp;[4] speech corpus and the [QUT-NOISE](https://research.qut.edu.au/saivt/databases/qut-noise-databases-and-protocols/)&nbsp;[5] noise corpus.
 
