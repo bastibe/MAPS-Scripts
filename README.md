@@ -4,7 +4,7 @@ This is part of the dissertation [Pitch of Voiced Speech in the Short-Time Fouri
 
 # MAPS: A Fundamental Frequency Estimation Algorithm for Speech in the Magnitude and Phase Spectrogram
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1302184.svg)](https://doi.org/10.5281/zenodo.1302184)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3923585.svg)](https://doi.org/10.5281/zenodo.3923585)
 
 This repository contains source code for MAPS, the *Magnitude and Phase Spectrogram* fundamental frequency estimation algorithm.
 
