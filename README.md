@@ -1,6 +1,6 @@
 This is part of the dissertation [Pitch of Voiced Speech in the Short-Time Fourier Transform: Algorithms, Ground Truths, and Evaluation Methods](https://bastibe.github.io/Dissertation-Website/), on the topic of [Fundamental Frequency Estimation](https://bastibe.github.io/Dissertation-Website/maps/index.html)  
 (Preprint Manuscript)  
-© 2020, Bastian Bechtold. All rights reserved.
+© 2020, Bastian Bechtold, Jade Hochschule & Carl von Ossietzky Universität Oldenburg, Germany.
 
 # MAPS: A Fundamental Frequency Estimation Algorithm for Speech in the Magnitude and Phase Spectrogram
 
